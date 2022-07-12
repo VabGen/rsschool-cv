@@ -22,6 +22,14 @@
                     </a>
                 </div>
 
+                <div class="container__menu-btn">
+                    <div class="menu-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+
                 <nav class="header__nav">
                     <ul class="header__list">
                         <li class="header__item">
@@ -93,7 +101,7 @@
                                 alt="Share us preferable dates">
                         </div>
                         <div class="steps__container-card-title">
-                            <h3 class="steps__card-title">
+                            <h3 class="steps__card-title steps__card-title-mobi">
                                 Share us preferable dates
                             </h3>
                         </div>
@@ -115,22 +123,27 @@
     </section>
 
     <section class="destinations">
-        <div class="wrapper">
+        <div class="wrapper wrapper__destinations">
             <h2 class="destinations__title">
                 3 STEPS TO THE PERFECT TRIP
             </h2>
             <div class="destinations__container">
                 <div class="destinations__line">
                     <div class="destinations__slide">
-                        <img class="destinations__line-img" src="./images/slaid1.png">
+                        <picture>
+                            <source class="destinations__line-img mobi__img" srcset="./images/Spain.png"
+                                media="(max-width: 390px)">
+                            <img class="destinations__line-img mobi__img" src="./images/slaid1.png">
+                            <span class="destinations__img-SPAIN">SPAIN</span>
+                        </picture>
                     </div>
                     <div class="destinations__slide active">
                         <img class="destinations__img" src="./images/slaid3.png">
-                        <span class="destinations__img-JAPAN">JAPAN</span> 
+                        <span class="destinations__img-JAPAN">JAPAN</span>
                     </div>
                     <div class="destinations__slide destinations__slide-USA">
-                        <span class="destinations__img-USA">USA</span> 
-                        <img src="./images/slaid2.png">
+                        <span class="destinations__img-USA">USA</span>
+                        <img class="destinations__img" src="./images/slaid2.png">
                     </div>
                 </div>
             </div>
@@ -243,7 +256,7 @@
                         <a class="stories__card-link"><b>Read More</b></a>
                     </div>
                 </div>
-                <button class="stories__card-btn" type="submit">
+                <button class="stories__card-btn footer__card-btn" type="submit">
                     <img class="stories__card-arrow" src="./images/SeeMore.svg" alt=""><span>See More</span>
                 </button>
             </div>
