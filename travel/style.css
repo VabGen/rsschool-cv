@@ -591,6 +591,13 @@ body {
         margin-bottom: -63px;
     }
 }
+@media (max-width: 390px) {
+    .destinations__container{
+        width: 360px;
+        height: 210px;
+        margin-bottom: -30px;
+    }
+}
 
 .destinations__line {
     position: relative;
@@ -602,6 +609,7 @@ body {
     left: 0px;
     transition: all 3s ease 0s;
 }
+
 
 @media (max-width: 390px) {
     .destinations__line {
@@ -639,7 +647,6 @@ body {
     gap: 10px;
     width: 100%;
     margin-bottom: 40px;
-    margin-top: 24px;
 }
 
 @media (max-width: 390px) {
