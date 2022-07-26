@@ -8,7 +8,8 @@
     <title>travel</title>
     <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./style.css">
-    <script defer src="./script.js"></script>
+    <script defer src="./slide.js"></script>
+    <script defer src="./popup.js"></script>
 </head>
 
 <body>
@@ -48,7 +49,7 @@
                 </nav>
 
                 <div class="header__btn">
-                    <button class="header__btn-login" type="submit" value="Login">Login</button>
+                    <a href="#popup"><button class="header__btn-login" type="submit" value="Login">Login</button></a>
                 </div>
             </div>
         </div>
@@ -133,20 +134,34 @@
                         <picture>
                             <source class="destinations__line-img mobi__img" srcset="./images/Spain.png"
                                 media="(max-width: 390px)">
-                            <img class="destinations__line-img mobi__img" src="./images/slaid1.png">
+
+                            <img class="destinations__line-img mobi__img" src="./images/Spain.png">
+
                             <span class="destinations__img-SPAIN">SPAIN</span>
                         </picture>
                     </div>
                     <div class="destinations__slide active">
-                        <img class="destinations__img" src="./images/slaid3.png">
-                        <span class="destinations__img-JAPAN">JAPAN</span>
+
+                        <picture>
+                            <source class="destinations__line-img mobi__img" srcset="./images/Japan.png"
+                                media="(max-width: 390px)">
+                            <img class="destinations__img mobi__img" src="./images/Japan.png">
+                            <span class="destinations__img-JAPAN">JAPAN</span>
+                        </picture>
                     </div>
                     <div class="destinations__slide destinations__slide-USA">
-                        <span class="destinations__img-USA">USA</span>
-                        <img class="destinations__img" src="./images/slaid2.png">
+                        <picture>
+                            <source class="destinations__line-img mobi__img" srcset="./images/USA.png"
+                                media="(max-width: 390px)">
+                            <span class="destinations__img-USA">USA</span>
+                            <img class="destinations__img mobi__img" src="./images/USA-mobi.png">
+                        </picture>
+
                     </div>
                 </div>
             </div>
+            <button class="btn-next" type="button"><i class="left"></i></button>
+            <button class="btn-prev" type="button"><i class="right"></i></button>
             <div class="destinations__dots">
                 <span class="destinations__dot"></span>
                 <span class="destinations__dot destinations__dot_active"></span>
@@ -278,6 +293,36 @@
             </div>
         </div>
     </section>
+  
+    <div class="popup" id="popup">
+        <div class="popup__inner">
+            <a class="popup__area" href="#head"></a> 
+            <div class="popup__body">
+                <div class="popup__content">
+                    <div class="popup__title">Create account</div>
+                    <div class="popup__input">
+                        <form class="popup__input-form" name="test">
+                            <p>E-mail<br>
+                                <input class="input__email" type="email" size="54">
+                            </p>
+                            <p>Password<br>
+                                <input class="input__password" type="password" size="54">
+                            </p>
+                            <p> <input class="input__submit" type="submit" value="Sign Up"> 
+                            </p>
+                        </form>
+                        <hr align="center" size="4" width="560px"
+                            style="background:rgba(13, 96, 111, 0.5); margin: 0px 46px 20px 44px;">
+                        <div class="popup__footer">
+                            <p>Already have an account?
+                                <a class="popup__login" href="#popup">Log in</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
 

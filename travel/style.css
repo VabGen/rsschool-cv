@@ -74,6 +74,10 @@ ul li {
     list-style: none;
 }
 
+p {
+    text-decoration: none;
+}
+
 img {
     vertical-align: top;
 }
@@ -574,9 +578,18 @@ body {
 }
 
 .destinations__container {
-    width: 800px;
-    height: 800px;
+    width: 1440px;
+    overflow: hidden;
     margin-bottom: 84px;
+    margin: 0 auto;
+}
+@media (max-width: 390px) {
+    .destinations__container {
+        position: relative;
+        width: 360px;
+        height: 400px;
+        margin-bottom: -63px;
+    }
 }
 @media (max-width: 390px) {
     .destinations__container{
@@ -587,9 +600,38 @@ body {
 }
 
 .destinations__line {
+    position: relative;
     display: flex;
     gap: 60px;
-    /* width: 2520px; */
+    width: 2520px;
+    height: 800px;
+    margin: 0 -530px;
+    left: 0px;
+    transition: all 3s ease 0s;
+}
+
+
+@media (max-width: 390px) {
+    .destinations__line {
+    object-fit: contain;
+    position: relative;
+    display: flex;
+    gap: 0px;
+    width: 1080px;
+    height: 210px;
+    margin: 0 -360px;
+    left: 0px;
+    transition: all 3s ease 0s;
+    }
+}
+
+@media (max-width: 390px) {
+    .destinations__line img {
+    object-fit: contain;
+    width: 360px;
+    height: 210px;
+    border-radius: 16px;
+    }
 }
 
 @media (max-width: 390px) {
@@ -597,14 +639,6 @@ body {
         width: 360px;
         height: 410px;
     }
-}
-
-/* .destinations__slide {
-    display: none;
-} */
-
-.active {
-    display: block;
 }
 
 .destinations__dots {
@@ -641,6 +675,40 @@ body {
 
 .destinations__slide {
     position: relative;
+    width: 800px;
+    height: 800px;
+    z-index: 5;
+}
+
+@media (max-width: 390px) {
+    .destinations__slide {
+        width: 360px;
+        height: 222px;
+    }
+}
+
+.destinations__line-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+}
+
+.destinations__img {
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+}
+
+.destinations__img-SPAIN {
+    position: absolute;
+    font-family: 'RedHatText';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 42px;
+    color: #FFFFFF;
+    left: calc(50% - 108px/2 - 331px);
+    top: calc(50% - 42px/2 + 339px);
 }
 
 .destinations__img-JAPAN {
@@ -656,15 +724,23 @@ body {
 }
 @media (max-width: 390px) {
     .destinations__img-JAPAN{
-       display: none;
+        position: absolute;
+        font-family: 'RedHatText';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 26.46px;
+        color: #FFFFFF;
+        left: calc(50% - 60px/2 - 135px);
+        top: calc(50% - 26px/2 - 82.5px);
     }
 }
 
-@media (max-width: 390px) {
-    .destinations__img{
-     display: none;
+/* @media (max-width: 390px) {
+    .mobi__img{
+     width: 320px;
     }
-}
+} */
 
 .destinations__img-USA {
     position: absolute;
@@ -674,14 +750,24 @@ body {
     font-size: 32px;
     line-height: 42px;
     color: #FFFFFF;
-    left: calc(50% - 400px + 280px);
+    left: calc(50% - 400px + 14px);
     top: calc(50% - 42px/2 + 339px);
 }
+
 @media (max-width: 390px) {
     .destinations__img-USA{
-        display: none;
-    }
+        position: absolute;
+        font-family: 'RedHatText';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 26.46px;
+        color: #FFFFFF;
+        left: calc(50% - 60px/2 - 135px);
+        top: calc(50% - 26px/2 - 82.5px);
+        }
 }
+
 @media (max-width: 390px) {
     .destinations__img-SPAIN{
         position: absolute;
@@ -696,8 +782,86 @@ body {
     }
 }
 
+.btn-next {
+    position: absolute;
+    width: 500px;
+    height: 800px;;
+    left: calc(88% - 80px/2 - 320px);
+    top: calc(135% - 42px/2 + 332px);
+    background:rgb(246, 4, 97);
+    background:none;
+    z-index: 5555;
+}
+
+@media (max-width: 390px) {
+    .btn-next {
+        width: 50px;
+        height: 80px;;
+        left: calc(176% - 80px/2 - 320px);
+        top: calc(100% - 42px/2 + 340px);
+        background:rgb(246, 4, 97);
+        background:none;
+        z-index: 5555;
+        position: absolute;
+    }
+}
+
+@media (max-width: 390px) {
+    .right {
+        transform: rotate(135deg);
+    }
+}
+
+@media (max-width: 390px) {
+     i {
+        border: solid rgb(0, 0, 0);
+        display: inline-block;
+        padding: 10px;
+        border-width: 0 3px 3px 0;
+        border-color: rgba(242, 120, 92, 0.5);
+    }
+}
+
+.btn-prev {
+    position: absolute;
+    width: 500px;
+    height: 800px;
+    left: calc(18% - 80px/2 - 289px);
+    top: calc(134% - 42px/2 + 345px);;
+    background:rgb(246, 4, 97);
+    background:none;
+    z-index: 5555;
+}
+
+@media (max-width: 390px) {
+    .btn-prev {
+        width: 50px;
+        height: 80px;
+        left: calc(88% - 80px/2 - 287px);
+        top: calc(100% - 42px/2 + 340px);
+        background:rgb(246, 4, 97);
+        background:none;
+        z-index: 5555;
+        position: absolute;
+    }
+}
+
+@media (max-width: 390px) {
+    .left {
+        transform: rotate(-45deg);
+    }
+}
+
 .stories {
     margin-bottom: 131px;
+}
+
+@media (max-width: 390px) {
+    .stories {
+        font-size: 14px;
+        line-height: 18.52px;
+        margin-top: 20px;
+    }
 }
 
 .stories__title {
@@ -713,11 +877,9 @@ body {
 }
 @media (max-width: 390px) {
     .stories__title{
-        width: 214px;
-        height: 19px;
         font-size: 14px;
         line-height: 18.52px;
-        margin-bottom: 7px;
+        margin: 0 140px -20px;
     }
 }
 
@@ -929,4 +1091,237 @@ body {
 
 .footer__social-img {
     color: #F8F8F8;
+}
+
+/* -------------- popup --------------- */
+
+.popup {
+    position:fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.275);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: all 0.9s ease 0s;
+}
+
+.popup__area {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.popup:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup:target .popup__content {
+    transform: perspective(600px) translate(0px, 0) rotateY(0deg);
+    opacity: 1;
+}
+
+.popup__body {
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 450px;
+}
+
+.popup__head {
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 450px;
+}
+
+.popup__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(177.09deg, #FFFFFF 6.15%, #0D606F 202.69%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    max-width: 650px;
+    height: 436px;
+    padding: 30px;
+    position: relative;
+    transform: perspective(600px) translate(0px, -100%) rotateY(45deg);
+    opacity: 0;
+    transition: all 0.9s ease 0s;
+}
+
+.popup__title {
+    font-size: 32px;
+    font-family: 'Aleo';
+    font-weight: 700;
+    line-height: 38.4px;
+    color: #0D606F;
+    height: 38px;
+    width: 219px;
+}
+
+.popup__input {
+    padding: 30px 46px 23px 44px;
+}
+
+.popup__input p {
+    color: #0D606F;
+    padding: 0px 46px 25px 44px;
+}
+
+.popup__input-form p:last-child {
+    padding-bottom: 26px;
+}
+
+.input__social {
+    margin: 20px 45px;
+    background: #1877F2;
+    width: 560px;
+    height: 54px;
+    box-shadow: inset 0px 0px 3px rgba(13, 96, 111, 0.08), inset 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+
+}
+
+.input__social::placeholder {
+    font-family: 'RedHatText';
+    font-style: Regular;
+    font-size: 20px;
+    line-height: 26px;
+    color: #FFFFFF;
+    background: url(./images/Facebook.png) no-repeat 164px;
+    width: auto;
+    height: auto;
+    padding-left: 202px;
+} 
+
+
+.input__social+.input__social {
+    margin-bottom: 70px;
+    background: #FFFFFF;
+}
+
+.input__social+.input__social::placeholder {
+    background: url(./images/Google.png) no-repeat 164px;
+    font-family: 'RedHatText';
+    font-style: Regular;
+    font-size: 20px;
+    line-height: 26px;
+    color: #0D606F;
+    width: auto;
+    height: auto;
+    padding-left: 202px;
+} 
+
+.input__hr-left {
+    position: absolute;
+    top: 300px;
+    left: 0px;
+}
+
+.input__hr-right {
+    position: absolute;
+    top: 300px;
+    right: 0px;
+}
+
+.input__hr-line {
+    font-family: 'Aleo';
+    font-style: Bold;
+    font-size: 20px;
+    line-height: 24px;
+    color: rgba(13, 96, 111, 0.5);
+    position: absolute;
+    top: 288px;
+}
+
+.input__email {
+    background: #FFFFFF;
+    width: 560px;
+    height: 54px;
+    box-shadow: inset 0px 0px 3px rgba(13, 96, 111, 0.08), inset 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.input__email::placeholder {
+    padding: 10px;
+}
+
+.input__password {
+    background: #FFFFFF;
+    width: 560px;
+    height: 54px;
+    box-shadow: inset 0px 0px 3px rgba(13, 96, 111, 0.08), inset 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.input__password::placeholder {
+    padding: 10px;
+}
+
+
+.input__submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 560px;
+    height: 54px;
+    background: #0D606F;
+    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.input__submit[value="Sign Up"] {
+    font-size: 20px;
+    font-family: 'RedHatText';
+    font-weight: 400;
+    line-height: 26px;
+    color: #FFFFFF; 
+}
+
+.input__submit[value="Sign In"] {
+    font-size: 20px;
+    font-family: 'RedHatText';
+    font-weight: 400;
+    line-height: 26px;
+    color: #FFFFFF; 
+}
+
+.popup__footer {
+    display: flex;
+    justify-content: center;
+}
+
+.popup__footer p {
+    height: 18px;
+    width: 320px;
+    font-size: 15px;
+    font-family: 'Aleo';
+    font-weight: 700;
+    line-height: 18px;
+    color: rgba(13, 96, 111, 0.5);
+    text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.16);
+}
+
+.popup__footer a {
+    text-decoration: underline;
+    padding-left: 2px;
+    font-weight: bold;
+    color: rgba(13, 96, 111);
 }
