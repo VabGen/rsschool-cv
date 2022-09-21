@@ -228,6 +228,7 @@ body {
     text-align: end;
     padding-right: 20px;
     padding-top: 30px;
+    cursor: default;
 }
 
 .avatar {
@@ -317,7 +318,7 @@ body {
     position: relative;
     height: 100%;
     width: 100%;
-    margin: 50px 0px 0px 40px;
+    margin: 20px 0px 0px 40px;
 }
 
 .linne {
@@ -337,10 +338,19 @@ body {
     line-height: 8px;
     background-size: 100%;
     color: var(--header_text-color);
+    margin-top: 20px;
 }
 
 .article__about-me {
     padding-top: 20px;
+}
+
+.article__about-me > p {
+    padding-bottom: 10px;
+}
+
+.article__about-code {
+    cursor: default;
 }
 
 .article__skill-progress {
@@ -378,7 +388,7 @@ body {
     margin-left: 10px;  
 }
 
-.skill__progress-text {
+.skill__progress-text1 {
     font-family: BebasNeue;
     font-weight: 400;
     font-size: 13px;
@@ -386,6 +396,18 @@ body {
     letter-spacing: 1px;
     background-size: 100%;
     color: var(--header_text-color);
+    padding-right: 0px;
+}
+
+.skill__progress-text2 {
+    font-family: BebasNeue;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    background-size: 100%;
+    color: var(--header_text-color);
+    padding-right: 40px;
 }
 
 .h3 {
@@ -414,6 +436,10 @@ body {
     margin: 50px 0px 0px 0px;
 }
 
+p {
+    cursor: default;
+}
+
 .scills__about {
     font-family: BebasNeue;
     letter-spacing: 2px;
@@ -422,6 +448,10 @@ body {
     line-height: 30px;
     background-size: 100%;
     color: var(--header_text-color);
+}
+
+.scills__about-english {
+    padding-left: 140px;
 }
 
 .scills__linne {
@@ -533,7 +563,7 @@ body {
 }
 
 .popup__text p {
-    padding: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 25px;
 }
 
 .footer {
@@ -561,6 +591,10 @@ body {
     align-items: flex-end;
 }
 
+.footer__git > span {
+    cursor: default;
+}
+
 .footer__git-img {
     object-fit: contain;
     margin-right: 5px;
@@ -572,6 +606,10 @@ body {
     display: flex;
     align-items: flex-end;
     font-size: 11px;
+}
+
+.footer__copyright > span {
+    cursor: default;
 }
 
 .footer__link {
@@ -615,6 +653,14 @@ body {
 .footer__contacts-img {
     margin-right: 5px;
     width: 20px;
+}
+
+.footer__contacts-phone {
+    padding-bottom: 10px;
+}
+
+.footer__contacts-tel {
+    padding-bottom: 10px;
 }
 
 .footer__contacts-link {
