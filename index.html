@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="резюме">
+    <meta name="author" content="Gendos">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="theme-color" content="#00ffff">
+    <title>VabiGen</title>
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header" id="header">
+            <div class="wrapper__container">
+                <div class="header__inner">
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a class="menu__link" aria-hidden="true" href="#popup">Contacts</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="aside_wrapper">
+            <aside class="aside_ava">
+                <div class="wrapper__container">
+                    <div class="aside__inner">
+                        <div class="avatar">
+                            <img class="avatar__img" src="./images/ava.JPG" alt="avatar">
+                        </div>
+                        <div class="scills">
+                            <div class="scills__about">
+                                <h3 class="scills_h3">education</h3>
+                            </div>
+                            <div class="scills__linne">
+                                <span></span>
+                            </div>
+                            <div class="scills__about-me">
+                                <p><b>University:</b> Undergraduate specialty<br> "Applied
+                                    Informatics",<br>Russian University of Economics.<br>G.V. Plekhanov
+                                </p>
+                            </div>
+                            <div class="scills__about">
+                                <h3 class="scills_h3">English</h3>
+                            </div>
+                            <div class="scills__linne">
+                                <span></span>
+                            </div>
+                            <div class="scills__about-me">
+                                <p class="scills__about-english"><b>A1</b></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <main class="main" id="main">
+                <div class="wrapper__container">
+                    <div class="main__inner">
+                        <section class="section">
+                            <div class="section__block_name">
+                                <h2 class="name"><strong>Vabishchevich</strong> &ensp; Henadz
+                                    <span class="section__name_line"></span>
+                                </h2>
+                            </div>
+                            <article class="article">
+                                <div class="article__about">
+                                    <h3 class="h3">About me</h3>
+                                </div>
+                                <div class="article__linne">
+                                </div>
+                                <div class="article__about-me">
+                                    <p>I am a beginner javascript-programmer.<br>I am well
+                                        versed in the language, every day I study new features of the language and
+                                        develop my own projects.</p>
+                                </div>
+                            </article>
+                            <article class="article">
+                                <div class="article__about">
+                                    <h3 class="h3">code examples</h3>
+                                </div>
+                                <div class="article__linne">
+                                    <span></span>
+                                </div>
+                                <div class="article__about-me">
+                                    <p><b>Function that returns a random array value:</b>
+                                    </p>
+                                    <code class="article__about-code">javascript
+                                        function shuffle(arr){<br>
+                                            let j, temp;<br>
+                                            for(let i = arr.length - 1; i &gt; 0; i--){<br>
+                                                j = Math.floor(Math.random()*(i + 1));<br>
+                                                temp = arr[j];<br>
+                                                arr[j] = arr[i];<br>
+                                                arr[i] = temp;<br>
+                                            }<br>
+                                            return arr;<br>
+                                        };</code>
+                                </div>
+                            </article>
+                            <article class="article ">
+                                <div class="article__about">
+                                    <h3 class="h3">work experience</h3>
+                                </div>
+                                <div class="article__linne">
+                                    <span></span>
+                                </div>
+                                <div class="article__about-me">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                                        elit.<br>
+                                        Explicabo tempore cupiditate debitis officiis adipisci
+                                        reiciendis.<br>Facilis optio asperiores dolores omnis quidem
+                                        repellat, maxime voluptatem deserunt expedita cum
+                                        assumenda, alias qui.</p>
+                                </div>
+                            </article>
+                            <article class="article ">
+                                <div class="article__about">
+                                    <h3 class="h3">software&nbsp;skill</h3>
+                                </div>
+                                <div class="article__linne">
+                                    <span></span>
+                                </div>
+                                <div class="article__about-me article__skill">
+                                    <div class="article__skill-progress">
+                                        <div class="skill__progress-html"><span
+                                                class="skill__progress-text1">HTML&nbsp;/&nbsp;CSS</span>
+                                            <progress class="progress" max="100" value="70"></progress>
+                                            <span class="progress-percent">70&nbsp;%</span>
+                                        </div>
+                                        <div class="skill__progress-js"><span
+                                                class="skill__progress-text1">JavaScript</span>
+                                            <progress class="progress" max="100" value="30"></progress>
+                                            <span class="progress-percent">30&nbsp;%</span>
+                                        </div>
+                                        <div class="skill__progress-git"><span class="skill__progress-text2">Git</span>
+                                            <progress class="progress" max="100" value="50"></progress>
+                                            <span class="progress-percent">50&nbsp;%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </section>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <div class="popup" id="popup">
+            <div class="popup__inner">
+                <a class="popup__area" aria-hidden="true" href="#head"></a>
+                <div class="popup__body">
+                    <div class="popup__content">
+                        <a class="popup__close" aria-hidden="true" href="#header"><span>&times;</span></a>
+                        <div class="popup__title">Contact&nbsp;information</div>
+                        <div class="popup__text">
+                            <p>Location:&nbsp;Minsk,&nbsp;Belarus</p>
+                            <a class="footer__contacts-link" aria-hidden="true" href="tel:+375296186990">
+                                <img class="footer__contacts-img footer__contacts-tel" src="./images/phone.svg" alt="">
+                                <span
+                                    class="footer__contacts-phone">Phone:&nbsp;+375&nbsp;(29)&nbsp;618&nbsp;69&nbsp;90</span>
+                            </a>
+                            <a class="footer__contacts-link" aria-hidden="true" href="mailto:vabishchevich@mail.ru">
+                                <img class="footer__contacts-img" src="./images/mail.svg" alt="mail">
+                                <span>Mail:&nbsp;vabishchevich@mail.ru</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="wrapper__container">
+                <div class="footer__inner">
+                    <div class="footer__copyright">
+                        <span>©&nbsp;VabiGen&nbsp;2022</span>
+                    </div>
+                    <div class="footer__git">
+                        <span>VabGen</span>
+                        <a href="https://github.com/VabGen">
+                            <img class="footer__git-img" src="./images/GitHub.png" alt="github">
+                        </a>
+                    </div>
+                    <div class="footer__social">
+                        <a class="footer__social-link" href="https://rs.school">
+                            <img class="footer__social-img" src="./images/rss.png" alt="RS">
+                            <span class="school"><b>SCHOOL</b></span>
+                        </a>
+                    </div>
+                    <div class="footer__contacts">
+                        <a class="footer__contacts-link" href="tel:+375296186990">
+                            <img class="footer__contacts-img" src="./images/phone.svg" alt="phone">
+                            <span>+375&nbsp;(29)&nbsp;618&nbsp;69&nbsp;90</span>
+                        </a>
+                        <a class="footer__contacts-link-mail" href="mailto:vabishchevich@mail.ru">
+                            <img class="footer__contacts-img" src="./images/mail.svg" alt="mail">
+                            <span>vabishchevich@mail.ru</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
